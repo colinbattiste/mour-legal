@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Privacy Policy — Mour App LLC</title>
-<style>
-body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:720px;margin:40px auto;padding:0 20px;line-height:1.55;color:#111}
-h1{font-size:1.6rem;margin-bottom:.25rem}
-.meta{color:#555;margin-bottom:1.5rem}
-pre{white-space:pre-wrap;font-family:inherit;font-size:0.98rem}
-nav a{margin-right:1rem}
-footer{margin-top:3rem;padding-top:1rem;border-top:1px solid #ddd;color:#666;font-size:.9rem}
-</style>
-</head>
-<body>
-<nav>
-<a href="index.html">Legal</a>
-<a href="privacy.html">Privacy Policy</a>
-<a href="terms.html">Terms of Service</a>
-</nav>
-<h1>Privacy Policy</h1>
-<p class="meta">Mour App LLC · Effective September 6, 2026 · Last updated September 8, 2026</p>
-<pre>MOUR PRIVACY POLICY Effective Date: September 6, 2026 Last Updated: September 8, 2026
+MOUR PRIVACY POLICY Effective Date: September 6, 2026 Last Updated: September 8, 2026
 
 Mour App LLC (“MOUR,” “we,” “us,” or “our”) respects your privacy. This Privacy Policy explains how we
 collect, use, disclose, and protect your information when you use the MOUR platform.
@@ -180,10 +157,3 @@ app or by email.
 
 If you have any questions about this Privacy Policy or our data practices, please contact us at admin@mourapp.com.
 
-</pre>
-<footer>
-<p><a href="privacy.pdf">Download PDF</a></p>
-<p>© 2026 Mour App LLC · Contact <a href="mailto:admin@mourapp.com">admin@mourapp.com</a></p>
-</footer>
-</body>
-</html>
