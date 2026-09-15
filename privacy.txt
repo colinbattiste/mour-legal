@@ -1,5 +1,5 @@
 MOUR PRIVACY POLICY
-Effective Date: September 14, 2026 · Last Updated: September 14, 2026
+Effective Date: September 14, 2026 · Last Updated: September 15, 2026
 
 Mour App LLC (“MOUR,” “we,” “us,” or “our”) respects your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your information when you use the MOUR platform.
 
@@ -113,9 +113,7 @@ MOUR may send transactional one-time passcode (OTP) SMS text messages to the mob
 
 • Consent to receive OTP SMS is not a condition of purchasing any goods or services
 
-• We do not share, sell, or provide your mobile phone number or messaging consent data to third parties or affiliates for marketing or promotional purposes
-
-• No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. Information sharing to subcontractors in support of services (such as SMS delivery providers) is limited to delivering the OTP messages you request; mobile opt-in data will not be shared with any third parties for their marketing
+We do not share, sell, or provide your mobile phone number or messaging consent data to third parties or affiliates for marketing or promotional purposes. No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. Information sharing to subcontractors in support of services (such as SMS delivery providers) is limited to delivering the OTP messages you request; mobile opt-in data will not be shared with any third parties for their marketing.
 
 Privacy Policy URL for this program: https://colinbattiste.github.io/mour-legal/privacy.html
 

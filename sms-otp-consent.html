@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SMS OTP Consent Evidence — Mour App LLC</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:820px;margin:40px auto;padding:0 20px;line-height:1.55;color:#111}
+h1{font-size:1.8rem;margin-bottom:0.2rem}
+h2{font-size:1.15rem;margin-top:1.6rem}
+.meta{color:#555;margin-bottom:1.5rem}
+nav{margin-bottom:1.5rem}
+nav a{margin-right:1rem}
+a{color:#0b57d0}
+ul{padding-left:1.2rem}
+footer{margin:3rem 0 2rem;color:#555;font-size:0.9rem;border-top:1px solid #ddd;padding-top:1rem}
+.callout{background:#f6f8fb;border:1px solid #d8dee8;border-radius:8px;padding:1rem 1.1rem;margin:1.2rem 0}
+.callout strong{display:block;margin-bottom:.35rem}
+.shot{border:1px dashed #9aa4b2;border-radius:8px;background:#fafbfc;padding:1.5rem;text-align:center;color:#555;margin:1rem 0}
+.shot em{display:block;font-size:.9rem;margin-top:.4rem}
+.mock-wrap{display:flex;justify-content:center;margin:1.5rem 0 2rem}
+.phone{width:320px;max-width:100%;border:10px solid #111;border-radius:28px;background:#fff;padding:18px 16px 24px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.phone .status{text-align:center;font-size:.7rem;color:#888;margin-bottom:8px}
+.phone h3{margin:0 0 .35rem;font-size:1.15rem;text-align:center}
+.phone .sub{text-align:center;color:#555;font-size:.9rem;margin:0 0 1rem}
+.phone label{display:block;font-size:.8rem;font-weight:600;margin-bottom:.35rem}
+.phone input[type="tel"]{width:100%;box-sizing:border-box;padding:.65rem .7rem;border:1px solid #ccc;border-radius:8px;font-size:1rem;margin-bottom:.9rem}
+.disclosure{font-size:.78rem;line-height:1.45;color:#222;background:#f4f6f8;border-radius:8px;padding:.75rem .8rem;margin-bottom:1rem}
+.disclosure a{color:#0b57d0}
+.phone button{width:100%;border:0;border-radius:10px;background:#111;color:#fff;padding:.8rem;font-size:1rem;font-weight:600}
+.note{font-size:.9rem;color:#444}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.88rem}
+pre{white-space:pre-wrap;background:#f6f8fb;border:1px solid #d8dee8;border-radius:8px;padding:1rem;overflow-x:auto}
+</style>
+</head>
+<body>
+<nav>
+<a href="index.html">Legal</a>
+<a href="privacy.html">Privacy Policy</a>
+<a href="terms.html">Terms of Service</a>
+<a href="sms-otp-consent.html">SMS OTP Consent</a>
+</nav>
+<h1>SMS OTP Consent Evidence</h1>
+<p class="meta">Mour App LLC · Public A2P 10DLC documentation · Last updated September 15, 2026 · Contact <a href="mailto:admin@mourapp.com">admin@mourapp.com</a></p>
+
+<div class="callout">
+<strong>For Twilio / carrier reviewers</strong>
+This page is public (no login). It documents how end users opt in to MOUR one-time passcode (OTP) SMS inside the MOUR mobile app. There is no website form opt-in and no keyword text-in opt-in for this campaign.
+</div>
+
+<h2>1. Campaign summary</h2>
+<ul>
+<li><strong>Brand / entity:</strong> Mour App LLC</li>
+<li><strong>Brand website:</strong> <a href="https://mourapp.com">https://mourapp.com</a></li>
+<li><strong>App:</strong> MOUR mobile app (<code>com.mour.app</code>)</li>
+<li><strong>Use case:</strong> Transactional one-time passcodes for login / signup authentication only — not marketing or promotional messages</li>
+<li><strong>Opt-in method:</strong> In-app phone verification screen only</li>
+<li><strong>Message frequency:</strong> On-demand / as needed when the user requests a code (not recurring)</li>
+</ul>
+
+<h2>2. How consent is collected</h2>
+<p>End users opt in only inside the MOUR mobile app during login or signup:</p>
+<ol>
+<li>The user opens the MOUR app and reaches the <strong>phone verification</strong> screen.</li>
+<li>The user voluntarily enters their own mobile phone number.</li>
+<li>The screen displays the required SMS disclosures (OTP-only, on-demand frequency, message and data rates, HELP/STOP, consent not a condition of purchase) plus links to the Privacy Policy and Terms of Service.</li>
+<li>The user taps <strong>Send code</strong> (or <strong>Continue</strong>) to request a verification text. That tap is the affirmative opt-in.</li>
+<li>MOUR then sends a single transactional OTP SMS to the number the user entered.</li>
+</ol>
+<p>Consent is collected specifically for this OTP campaign. Numbers are not obtained from purchased or shared lead lists. Consent is not a condition of purchase.</p>
+
+<h2>3. Required disclosures shown before Send code</h2>
+<p>The in-app phone verification screen shows this disclosure text (or substantively identical language) before the user can request an OTP:</p>
+<div class="callout">
+<p>By tapping Send code, you agree to receive a one-time MOUR authentication SMS to verify your mobile number. Messages are transactional OTPs only (not marketing). Message frequency: on-demand / as needed when you request a code. Message and data rates may apply. Reply HELP for help; reply STOP to opt out. Consent is not a condition of purchase. Privacy Policy and Terms of Service apply.</p>
+</div>
+
+<h2>4. In-app consent UI (HTML mock)</h2>
+<p class="note">This mock reproduces the phone verification screen reviewers would see in the app. It is the public stand-in for an in-app screenshot until a production capture is attached below.</p>
+<div class="mock-wrap">
+<div class="phone" aria-label="Mock of MOUR in-app phone verification screen">
+<div class="status">MOUR · Phone verification</div>
+<h3>Verify your number</h3>
+<p class="sub">We’ll text a one-time code to confirm it’s you.</p>
+<label for="phone-demo">Mobile phone number</label>
+<input id="phone-demo" type="tel" inputmode="tel" placeholder="(555) 555-0100" autocomplete="tel" aria-describedby="otp-disclosure"/>
+<div class="disclosure" id="otp-disclosure">
+By tapping <strong>Send code</strong>, you agree to receive a one-time MOUR authentication SMS to verify your mobile number. Messages are transactional OTPs only (not marketing). Message frequency: on-demand / as needed when you request a code. Message and data rates may apply. Reply HELP for help; reply STOP to opt out. Consent is not a condition of purchase.
+<p style="margin:.55rem 0 0"><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+</div>
+<button type="button" disabled>Send code</button>
+</div>
+</div>
+
+<h2>5. Screenshot placeholders</h2>
+<p>Attach production screenshots of the live app here when available. Until then, the HTML mock above is the public evidence of the consent UI.</p>
+<div class="shot">
+<strong>Screenshot 1 — Phone verification / opt-in screen</strong>
+<em>Placeholder: capture of the in-app screen showing the phone number field, full SMS disclosure text, Privacy/Terms links, and the Send code control. File path when added: <code>images/otp-consent-screen.png</code></em>
+</div>
+<div class="shot">
+<strong>Screenshot 2 — OTP received (optional)</strong>
+<em>Placeholder: capture of a sample OTP SMS such as “MOUR: Your verification code is 123456. Msg &amp; data rates may apply. Reply STOP to opt out, HELP for help.” File path when added: <code>images/otp-sample-sms.png</code></em>
+</div>
+
+<h2>6. Sample OTP messages</h2>
+<ol>
+<li><code>MOUR: Your verification code is 123456. Msg &amp; data rates may apply. Reply STOP to opt out, HELP for help.</code></li>
+<li><code>MOUR: Your login code is 654321. Do not share this code. Reply STOP to opt out.</code></li>
+</ol>
+
+<h2>7. Non-sharing of mobile numbers and consent data</h2>
+<p><strong>We do not share, sell, or provide your mobile phone number or messaging consent data to third parties or affiliates for marketing or promotional purposes.</strong> SMS delivery providers may process the number solely to send the OTP the user requested.</p>
+
+<h2>8. Legal links (public, no login)</h2>
+<ul>
+<li>Privacy Policy: <a href="https://colinbattiste.github.io/mour-legal/privacy.html">https://colinbattiste.github.io/mour-legal/privacy.html</a></li>
+<li>Terms of Service: <a href="https://colinbattiste.github.io/mour-legal/terms.html">https://colinbattiste.github.io/mour-legal/terms.html</a></li>
+<li>This consent evidence page: <a href="https://colinbattiste.github.io/mour-legal/sms-otp-consent.html">https://colinbattiste.github.io/mour-legal/sms-otp-consent.html</a></li>
+<li>Campaign message_flow (plain text): <a href="message-flow.txt">message-flow.txt</a></li>
+</ul>
+
+<h2>9. Campaign message_flow (for Twilio)</h2>
+<p>Paste the contents of <a href="message-flow.txt">message-flow.txt</a> into the campaign <code>message_flow</code> field. The current text is:</p>
+<pre>End users opt in to receive MOUR one-time passcode (OTP) SMS messages only inside the MOUR mobile app (com.mour.app) during login or signup. The user voluntarily enters their own mobile phone number on the in-app phone verification screen and taps a control such as "Send code" or "Continue" to request a verification text. At that step the app shows consent disclosures stating that by requesting a code the user agrees to receive a one-time MOUR authentication SMS; messages are transactional OTPs sent only when the user requests them (message frequency: on-demand / as needed; not recurring marketing); message and data rates may apply; reply HELP for help; reply STOP to opt out. Consent is collected specifically for this OTP campaign and is not obtained from purchased or shared lead lists; consent is not a condition of purchase. There is no website form opt-in and no keyword text-in opt-in for this campaign. Public evidence of the in-app opt-in screen (HTML mock of the phone verification UI with the required disclosures; no login required): https://colinbattiste.github.io/mour-legal/sms-otp-consent.html. We do not share, sell, or provide your mobile phone number or messaging consent data to third parties or affiliates for marketing or promotional purposes. Privacy Policy (required): https://colinbattiste.github.io/mour-legal/privacy.html. Terms of Service: https://colinbattiste.github.io/mour-legal/terms.html.</pre>
+
+<footer>
+<p>© 2026 Mour App LLC · <a href="mailto:admin@mourapp.com">admin@mourapp.com</a> · 8 The Green, Suite B, Dover, DE 19901 · (302) 403-6808</p>
+</footer>
+</body>
+</html>
